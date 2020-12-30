@@ -75,13 +75,13 @@ body {
 
 .c1{
   position: absolute;
-  top: 35%;
+  top: 40%;
   filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
 }
 
 .c2{
   position: absolute;
-  top: 30%;
+  top: 35%;
   filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
 }
 
