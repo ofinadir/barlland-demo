@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+html,body,header {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #505962;
+}
+
+.navbar {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  padding: 0.3rem 1rem !important;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  transition: 500ms ease;
+  background-color:  rgba(3, 37, 37, 0.2);
+  
+}
+
+.navbar-brand {
+  width: 5rem;
+}
+
+.scrolled {
+  background: rgba(3, 37, 37, 0.7);
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffe600 !important;
+}
+
+.navbar > a > img {
+  margin-bottom: 5px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel::after {
+  content : '';
+  display: block;
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0), rgba(0,0,0,0) );
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.carousel-item{
+  height: 320px;
+  position: relative;
+}
+
+.c1{
+  position: absolute;
+  top: 35%;
+  filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
+}
+
+.c2{
+  position: absolute;
+  top: 30%;
+  filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
+}
+
+.carousel-caption h3 {
+  font-size: 16px;
+}
+
+.carousel-item .carousel-caption{
+  font-family: 'Times New Roman', serif;
+}
+
+.carousel-item .carousel-caption img{
+  width: 10rem;
+  padding: .5rem;
+}
+
+.carousel-item .c2 img{
+  width: 5rem;
+  padding: 4px;
+}
+
+.carousel-item .c2 h2 {
+  font-weight: bold;
+}
+
+.logo-barlland {
+  background-image: url("../images/logo.png")
+}
+
+.product {
+  padding-top: 40px;
+}
+
+.product h2 {
+  font-weight:normal;
+  color: #043838;
+}
+
+.icon {
+  width: 10vh;
+}
+
+.features span p {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #a1a1a1;
+} 
+/* desktop */
+@media (min-width: 768px) { 
+  .navbar {
+    background-color:  transparent;
+  }
+
+  .scrolled {
+    background: rgba(3, 37, 37, 0.7);
+  }
+
+  .navbar-brand {
+    width: 7rem;
+  }
+
+  .nav-con {
+    border-bottom: 1px solid #fff;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-left: 1rem;
+    color: white !important;
+  } 
+
+  .carousel-item{
+    height: 90vh;
+  }
+
+  .carousel-item .carousel-caption img{
+    width: 20rem;
+    padding: .5rem;
+  }
+
+  .carousel-item .c2 img{
+    width: 6rem;
+    padding: 2;
+  }
+  
+  .carousel-item .c2 h2{
+    font-weight: bold;
+    font-size: 52px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 28px;
+  }
+
+  .icon {
+    width: 15vh;
+  }
+  
+  .features span p {
+    font-size: 1rem;
+  } 
+
+}
