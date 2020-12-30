@@ -52,8 +52,25 @@ body {
 }
 
 .carousel-item{
-  height: 320px;
+  height: 100vh;
   position: relative;
+  background-position: -500px -100px;
+}
+
+.carousel-item-1 {
+  background-image: url(../images/img-4.jpg);
+}
+
+.carousel-item-2 {
+  background-image: url(../images/img-2.jpg);
+}
+
+.carousel-item-3 {
+  background-image: url(../images/img-3.jpg);
+}
+
+.carousel-item .i1 {
+  background-position: -1000px -150px;
 }
 
 .c1{
