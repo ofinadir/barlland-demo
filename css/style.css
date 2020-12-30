@@ -54,7 +54,7 @@ body {
 .carousel-item{
   height: 100vh;
   position: relative;
-  background-position: -500px -100px;
+  background-position: 50% 20%;
 }
 
 .carousel-item-1 {
@@ -121,11 +121,11 @@ body {
 }
 
 .icon {
-  width: 10vh;
+  width: 8vh;
 }
 
 .features span p {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: bold;
   color: #a1a1a1;
 } 
