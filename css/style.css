@@ -75,13 +75,13 @@ body {
 
 .c1{
   position: absolute;
-  top: 40%;
+  top: 44%;
   filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
 }
 
 .c2{
   position: absolute;
-  top: 35%;
+  top: 41%;
   filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .features span p {
-  font-size: 0.6rem;
+  font-size: 0.6urem;
   font-weight: bold;
   color: #a1a1a1;
 } 
