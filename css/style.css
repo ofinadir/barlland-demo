@@ -163,6 +163,18 @@ body {
     padding: .5rem;
   }
 
+  .c1{
+    position: absolute;
+    top: 40%;
+    filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
+  }
+  
+  .c2{
+    position: absolute;
+    top: 35%;
+    filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
+  }
+
   .carousel-item .c2 img{
     width: 6rem;
     padding: 2;
