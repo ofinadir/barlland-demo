@@ -19,6 +19,10 @@ body {
   
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .navbar-brand {
   width: 5rem;
 }
@@ -160,13 +164,6 @@ body {
   color: #b19600;
 }
 
-.product-item .imgoverflow{
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-}
-
-
 .product-item .product-card {
   position: relative;
 }
@@ -186,7 +183,6 @@ body {
   opacity: 100;
 }
 
-/* desktop */
 @media (min-width: 768px) { 
   .navbar {
     background-color:  transparent;
@@ -250,11 +246,4 @@ body {
     font-size: 0.6rem;
   } 
 
-}
-
-@media (min-width: 992px) { 
-  .product-item .imgoverflow{
-    width: 210px;
-    height: 210px;
-  }
 }
