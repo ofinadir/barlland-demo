@@ -16,8 +16,8 @@ $(document).ready(function () {
   $('#content-slider').lightSlider({
     autoWidth: true,
     loop: false,
-    slideEndAnimation: true,
     slideMargin: false,
+    speed: 200,
     enableTouch: true,
     pager: false,
   });
