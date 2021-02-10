@@ -80,10 +80,6 @@ ul {
   position: relative;
 }
 
-.single-product .figure .slide {
-  display: flex;
-}
-
 .single-product .price h5{
   color: #d6b600;
   font-weight: 600 !important;
@@ -98,6 +94,7 @@ ul {
 }
 
 .product-order span {
+  padding: 5px 8px;
  color: #494949;
 }
 

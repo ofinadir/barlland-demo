@@ -1,37 +1,28 @@
-let thumbnails = document.querySelectorAll('.product-thumbnail');
-let activeImages = document.getElementsByClassName('active-image');
+document.addEventListener('DOMContentLoaded', function () {
 
-for (let i = 0; i < thumbnails.length; i++) {
-
-  thumbnails[i].addEventListener('mouseover', function () {
-    if (activeImages.length > 0) {
-      activeImages[0].classList.remove('active-image')
+  let secondarySlider = new Splide('#secondary-slider', {
+    fixedWidth: '5rem',
+    height: '5rem',
+    gap: 8,
+    rewind: true,
+    cover: true,
+    pagination: false,
+    isNavigation: true,
+    breakpoints: {
+      '600': {
+        fixedWidth: 66,
+        height: 40,
+      }
     }
-    this.classList.add('active-image')
-    document.querySelector('#featured').src = this.src
-  })
-}
+  }).mount();
 
-$(document).ready(function () {
-  $('#content-slider').lightSlider({
-    autoWidth: true,
-    loop: false,
-    slideEndAnimation: false,
-    slideMargin: false,
-    speed: 200,
-    enableTouch: true,
-    pager: false,
+  let primarySlider = new Splide('#primary-slider', {
+    type: 'slide',
+    heightRatio: 1,
+    pagination: true,
+    arrows: false,
+    cover: true,
   });
+
+  primarySlider.sync(secondarySlider).mount();
 });
-
-// let buttonLeft = document.querySelector('#arrowLeft');
-// let buttonRight = document.querySelector('#arrowRight');
-
-// buttonLeft.addEventListener('click', function () {
-//   document.getElementById('slider').scrollLeft -= 180;
-// })
-
-// buttonRight.addEventListener('click', function () {
-//   document.getElementById('slider').scrollLeft += 180;
-//   console.log(buttonLeft)
-// })

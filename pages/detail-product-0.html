@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="../css/lightslider.min.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/detail-style.css">
+  <link rel="stylesheet" href="../css/splide.min.css">
   <title>Barlland</title>
 </head>
 
@@ -51,31 +51,37 @@
       <div class="container">
         <div class="row">
           <div class="col-12  col-md-5">
-            <figure class="figure">
-              <img id=featured src="../images/product/yurt-gc-1.jpg" class="figure-img img-fluid" alt="Yurt-GC"
-                width="600px">
-              <figcaption class="figure-caption">
 
-                <ul id="content-slider" class="d-flex list-unstyled">
-                  <li>
-                    <a href="#featured" class="mr-2 text-decoration-none d-inline-block">
-                      <img class="product-thumbnail active-image" src="../images/product/yurt-gc-1.jpg" alt="yurtgc-1"
-                        width="90px">
-                    </a>
+            <div id="primary-slider" class="splide mb-2">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="../images/product/yurt-gc-1.jpg" alt="YurtsGC">
                   </li>
-                  <li>
-                    <a href="#featured" class="mr-2 text-decoration-none d-inline-block">
-                      <img class="product-thumbnail" src="../images/product/yurt-gc-2.png" alt="yurtgc-1" width="90px">
-                    </a>
+                  <li class="splide__slide">
+                    <img src="../images/product/yurt-gc-2.png" alt="YurtsGC">
                   </li>
-                  <li>
-                    <a href="#featured" class="mr-2 text-decoration-none d-inline-block">
-                      <img class="product-thumbnail" src="../images/product/yurt-gc-3.png" alt="yurtgc-1" width="90px">
-                    </a>
+                  <li class="splide__slide">
+                    <img src="../images/product/yurt-gc-3.png" alt="YurtsGC">
                   </li>
                 </ul>
-              </figcaption>
-            </figure>
+              </div>
+            </div>
+            <div id="secondary-slider" class="splide d-md-flex d-none">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="../images/product/yurt-gc-1.jpg" alt="YurtsGC">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="../images/product/yurt-gc-2.png" alt="YurtsGC">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="../images/product/yurt-gc-3.png" alt="YurtsGC">
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div class="col-12 col-md-7">
@@ -203,8 +209,8 @@
 
   </div>
   <script src="../js/jquery-3.5.1.min.js"></script>
-  <script src="../js/lightslider.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/splide.min.js"></script>
   <script src="../js/detail-product.js"></script>
 </body>
 
