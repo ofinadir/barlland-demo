@@ -1,0 +1,30 @@
+.welcome-popup .modal-dialog .modal-content,
+.welcome-popup .modal-dialog .modal-content button {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.welcome-popup .modal-dialog .modal-content .modal-body {
+  margin: 2.5vw 0;
+}
+
+.welcome-popup .modal-dialog .modal-content .modal-body img {
+  width: 40vw;
+}
+
+.welcome-popup .modal-dialog .modal-content .modal-body h3 {
+  margin: 2vw 0;
+  font-size: 3.5vw;
+  font-family: 'Times New Roman', Times, serif;
+  color: #052d2d;
+}
+
+.welcome-popup .modal-dialog .modal-content .modal-body button {
+  margin-top: 2vw;
+  background-color: #052d2d;
+  width: 20vw;
+  font-size: 2vw;
+}

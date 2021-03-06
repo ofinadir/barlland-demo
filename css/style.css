@@ -1,63 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap');
-html,body,header {
-  scroll-behavior: smooth;
-}
-body {
-  overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
-  color: #505962;
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
 }
 
-.navbar {
-  font-weight: 600;
-  padding: 0.3rem 1rem !important;
-  font-size: .8rem;
-  letter-spacing: .1rem;
-  transition: 500ms ease;
-  background-color:  rgba(3, 37, 37, 0.2);
-  
+.icon1 {
+  fill: aqua;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.navbar-brand {
-  width: 5rem;
-}
-
-.scrolled {
-  background: hsla(180, 85%, 8%, 0.702);
-}
-
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #ffe600 !important;
-}
-
-.navbar > a > img {
-  margin-bottom: 5px;
-}
-
+/* banner */
 .carousel {
   position: relative;
 }
 
 .carousel::after {
-  content : '';
+  content: '';
   display: block;
   width: 100%;
   height: 30%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0), rgba(0,0,0,0) );
+  background-image: linear-gradient(to top, rgba(0, 0, 0), rgba(0, 0, 0, 0));
   position: absolute;
   bottom: 0;
   z-index: 2;
 }
 
-.carousel-item{
-  height: 80vh;
+.carousel-item {
+  height: 600px;
   position: relative;
   background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carousel-item-1 {
@@ -76,32 +48,32 @@ body {
   background-position: -1000px -150px;
 }
 
-.c1{
+.c1 {
   position: absolute;
   top: 42%;
-  filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
+  filter: drop-shadow(0 1px 4px rgb(0, 0, 0, 0.7));
 }
 
-.c2{
+.c2 {
   position: absolute;
   top: 40%;
-  filter: drop-shadow( 0 1px 4px rgb(0, 0, 0, .7));
+  filter: drop-shadow(0 1px 4px rgb(0, 0, 0, 0.7));
 }
 
 .carousel-caption h3 {
   font-size: 16px;
 }
 
-.carousel-item .carousel-caption{
+.carousel-item .carousel-caption {
   font-family: 'Times New Roman', serif;
 }
 
 .carousel-item .carousel-caption img{
   width: 10rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-.carousel-item .c2 img{
+.carousel-item .c2 img {
   width: 5rem;
   padding: 4px;
 }
@@ -110,17 +82,17 @@ body {
   font-weight: bold;
 }
 
-.logo-barlland {
-  background-image: url("../images/logo.png")
+.features {
+  padding-top: 40px;
+  background-color: #ffffff;
 }
 
 .features {
-  padding-top: 40px;
-  background-color: #f7f7f7;
+  background-color: #ecf3f321;
 }
 
 .features h2 {
-  font-weight:normal;
+  font-weight: normal;
   color: #043838;
 }
 
@@ -131,44 +103,75 @@ body {
 .features span p {
   font-size: 0.6rem;
   font-weight: bold;
-  color: #a1a1a1;
-} 
+  color: #03252580;
+}
 
 .product-item {
   padding: 0;
-  background-color: #ffffff;
+  background-color: #fafafa;
   padding: 40px 0;
 }
 
+.product .product-item .link-category {
+  text-decoration: none;
+}
+
+.product .product-item .card {
+  background-color: #0DA2A2;
+  border: 0;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.product .product-item .card:hover,
+.product .product-item .card:active  {
+  background-color: #0eb1b1;
+}
+
+.product .product-item .card .card-title {
+  font-weight: bold;
+  color: #EDEDED;
+}
+
 .product-item .figure .figure-caption {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .product-item .figure .figure-caption h6 {
   font-size: 1rem;
 }
-.product-item .figure .figure-caption h6, 
-.product-item .figure .figure-caption p{
+.product-item .figure .figure-caption h6,
+.product-item .figure .figure-caption p {
   color: #434a52;
 }
 
-.product-item .figure .figure-caption p{
+.product-item .figure .figure-caption p {
   font-size: 0.75rem;
   font-weight: bold;
 }
 
-.product-item .figure .figure-caption .more{
+.product-item .figure .figure-caption .more {
   font-size: 0.75rem;
   font-weight: 400;
   color: #816e00;
 }
 
-.product-item .figure .figure-caption .more:hover{
+.product-item .figure .figure-caption .more:hover {
   font-weight: 400;
   color: #b19600;
 }
 
 .product-item .product-card {
   position: relative;
+  box-shadow: 0px 1px 10px rgba(27, 27, 27, 0.25);
 }
 
 .product-item .product-hover {
@@ -186,68 +189,44 @@ body {
   opacity: 100;
 }
 
-.footer .about h6{
+footer .about h6 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.copyright, .credit, .footer h6 {
+.copyright,
+.credit,
+footer h6 {
   font-size: 12px;
 }
 
-.footer a {
+footer a {
   font-size: 12px;
   color: #8d7800;
 }
 
-@media (min-width: 768px) { 
-  .navbar {
-    background-color:  transparent;
-  }
+@media (min-width: 768px) {
 
-  .scrolled {
-    background: rgba(3, 37, 37, 0.7);
-  }
-
-  .navbar-brand {
-    width: 7rem;
-  }
-
-  .nav-con {
-    border-bottom: 1px solid #fff;
-  }
-
-  .nav-link {
-    text-transform: uppercase;
-    margin-left: 1rem;
-    color: white !important;
-  } 
-
-  .carousel-item{
-    height: 90vh;
-    background-position: -300px -100px;
-  }
-
-  .carousel-item .carousel-caption img{
+  .carousel-item .carousel-caption img {
     width: 20rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
-  .c1{
+  .c1 {
     top: 40%;
   }
-  
-  .c2{
+
+  .c2 {
     top: 35%;
   }
 
-  .carousel-item .c2 img{
+  .carousel-item .c2 img {
     width: 6rem;
     padding: 2;
   }
-  
-  .carousel-item .c2 h2{
+
+  .carousel-item .c2 h2 {
     font-weight: bold;
     font-size: 52px;
   }
@@ -259,9 +238,8 @@ body {
   .icon {
     width: 10vh;
   }
-  
-  .features span p {
-    font-size: 0.6  rem;
-  } 
 
+  .features span p {
+    font-size: 0.6 rem;
+  }
 }

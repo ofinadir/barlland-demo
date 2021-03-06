@@ -1,0 +1,28 @@
+.contact-card a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #948500;
+}
+.contact-card a:hover {
+  color: #052913;
+}
+
+.contact-card .card .card-title,
+.contact-card .card .card-text {
+  font-size: 14px;
+}
+.contact-card .card .card-text {
+  font-weight: bold;
+  color: #c4a80a;
+}
+
+.contact-card .card {
+  background-color: #f5ffc7;
+  box-shadow: 0px 1px 10px rgba(61, 61, 61, 0.2);
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
